@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="script.js"></script>
+        <link href="css.css" rel="stylesheet" type="text/css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Sign In!</title>
+    </head>
+    <body>
+        <div id="Cabecera" class="ajuste"> 
+            <h1>Welcome to the Unix Comunnity</h1>
+            <img src="http://i.stack.imgur.com/taN7r.gif"/>
+        </div>
+        <div id="partes" class="set1">
+            
+            <div id="contenedor" class="set2">
+            <form>
+                   <tr>
+                        <td>User:</td>
+                    <br>
+                        <td><input type="text" id="name" value="User" onfocus="clean(this);" onblur="nullField(this);"></td>
+                        <td><div id="alname"></div></td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td>
+                        <td><input type="password" value="password" id="pass" onfocus="clean(this);" onblur="Password(this);"></td>
+                    </tr>
+                    
+                    <input type="button" onclick="Validate();" value="Confirmar datos">
+                    
+            </form>
+            </div>
+        </div>
+    </body>
+</html>

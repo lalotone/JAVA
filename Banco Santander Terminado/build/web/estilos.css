@@ -1,0 +1,78 @@
+html{
+    background: url(imagenes/fondos01_www.gratis.es.jpg) repeat;
+}
+
+#modh1{
+    margin-left: 150px;
+    float: left;
+    font-family: Broadway;
+    font-style: oblique;
+        
+}
+
+#modh2{
+    margin-right: 150px;
+    float: right;
+    font-family: Broadway;
+    font-style: oblique;
+}
+
+#cabecera{
+    text-align: center;
+    margin-top: 25px;
+    
+    
+}
+
+#gestion{
+    padding: 25px;
+    border-width: 3px;
+    border-style: inset;
+    border-color: aliceblue;
+    border-radius: 50px;
+    margin-left: 170px;
+    margin-top: 110px;
+    width: auto;
+    float: left;
+    
+}
+
+#cuadroMostrar{
+    padding: 25px;
+    border-width: 4px;
+    border-style: groove;
+    border-color: aliceblue;
+    border-radius: 50px;
+    margin-left: 50px;
+    margin-top: 125px;
+    width: auto;
+    float: left;
+    
+}
+
+form{
+    text-align: center;
+}
+
+#bancoesp{
+    padding: 30px;
+    margin-top: 125px;
+    float: left;
+    transition: width 3s;
+    transition: height 3s;
+    
+    
+}
+
+#bancoesp img:hover{
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -ms-filter: "FlipH";
+    filter: FlipH;
+}
+
+textArea{
+    float: left;
+}

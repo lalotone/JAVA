@@ -1,0 +1,42 @@
+    
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="css.css">
+    </head>
+    <body>
+        <script type="text/javascript" src="script.js"></script>
+        <div id="titulo"><h1>Sign In!</h1></div>
+        
+        <div id="centro">
+            <form name="formulario">
+                <br>
+                Introduzca su DNI:
+                <br>
+                <input type="text" value="introduzca su DNI" onfocus="Clean(this);" name="dni">
+                <br>
+                Introduzca su nombre:
+                <br>
+                <input type="text" value="introduzca su nombre" onfocus="Clean(this);" name="nombre">
+                <br>
+                Introduzca sus apellidos:
+                <br>
+                <input type="text" value="Introduzca sus apellidos" onfocus="Clean(this);" name="apellidos">
+                <br>
+                Introduzca su fecha de nacimiento:
+                <br>
+                <input type="date" onfocus="Clean(this);" name="fechaNacimiento" value="Fecha de Nacimiento">
+                <br>
+                <br>
+                <input type="button" onclick="validar();" value="Validar">
+                <input type="button" onclick="mostrar();" value="Mostrar">
+                <input type="button" onclick="vaciarto();" value="Vaciar LocalStorage">
+            </form>
+            
+        </div>
+        <div id="unCliente">
+        </div>
+    </body>
+</html>

@@ -1,0 +1,155 @@
+    body{background: url("http://6269-9001.zippykid.netdna-cdn.com/wp-content/uploads/2013/09/Matrix-Live-Wallpaper.jpg")}
+    label{color: white;font-style: italic;}
+    #contenedor{width: 50%; height: 500px; background-color: black; text-align: center; margin: auto auto auto; margin-top: 200px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 6px cyan, 0 6px 0 cyan;
+    }
+    img{position: absolute; top: 220px; right: 880px;
+    -moz-transform:rotate(-20deg);
+    }
+    .boton {
+     margin-top: 10px;
+     text-decoration: none;
+     color: #000000;
+     font-weight: bold;
+     padding: 12px 20px;
+     font-size: 12px;
+     border-radius: 10px;
+     background-color: #666666;
+     box-shadow: 0 3px 3px cyan, 0 6px 0 cyan, 0px 6px 10px cyan, inset 0px 2px 9px rgba(255,255,255,0.2), inset 0 -2px 9px rgba(0,0,0,0.2);
+     position: relative;
+     border-bottom: 1px solid rgba(255,255,255,0.2);
+     display: inline-block;
+     font-family: Arial, Helvetica, sans;
+     text-shadow: 0px -1px 0px rgba(0,0,0,0.2);
+    }
+    .boton:hover {
+     box-shadow: 0 5px 5px cyan, 0 9px 0 #393939, 0px 9px 10px cyan, inset 0px 2px 15px cyan, inset 0 -2px 9px cyan;
+     color: #fff !important;
+    }
+    .boton:active {
+     top: 7px;
+     box-shadow: 0 2px 0 #393939, 0px 4px 4px rgba(0,0,0,0.4), inset 0px 2px 5px rgba(0,0,0,0.2);
+     color: #fff !important;
+    }
+    .formaBoton {
+     border-radius: 5px;
+     padding-left: 25px;
+     padding-right: 25px;
+    }
+    .colorGris{
+     background-color: #c34747;
+     box-shadow: 0 5px 5px #853232, 0 9px 0 #5e2525, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 9px rgba(255,255,255,0.2), inset 0 -2px 9px rgba(0,0,0,0.2);
+    }
+    .colorGris:hover {
+     box-shadow: 0 5px 5px #853232, 0 9px 0 #5e2525, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 15px rgba(255,255,255,0.4), inset 0 -2px 9px rgba(0,0,0,0.2);
+    }
+    .colorGris:active {
+     box-shadow: 0 2px 0 #5e2525, 0px 4px 4px rgba(0,0,0,0.4), inset 0px 2px 5px rgba(0,0,0,0.2);
+    }
+
+    h2{text-shadow: 1px 1px 0 cyan, -1px -1px 0 cyan, 1px -1px 0 cyan,
+                -1px 1px 0 cyan, 3px 3px 5px #333;}
+
+    .onoffswitch {
+        position: absolute;
+        top: 300px;
+        left: 900px;
+        width: 98px;
+        -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+        }
+    .onoffswitch-checkbox {
+        display: none;
+        }
+    .onoffswitch-label {
+        display: block; overflow: hidden; cursor: pointer;
+        border: 2px solid #03FFF7; border-radius: 20px;
+        }
+    .onoffswitch-inner {
+        width: 200%; margin-left: -100%;
+        -moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
+        -o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+        }
+    .onoffswitch-inner:before, .onoffswitch-inner:after {
+        float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+        font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+        -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+        }
+    .onoffswitch-inner:before {
+        content: "MALE";
+        padding-left: 10px;
+        background-color: #000000; color: #FFFFFF;
+        }
+    .onoffswitch-inner:after {
+        content: "FEMALE";
+        padding-right: 10px;
+        background-color: #000000; color: #FFFFFF;
+        text-align: right;
+        }
+    .onoffswitch-switch {
+        width: 9px; margin: 10.5px;
+        background: #A1A1A1;
+        border: 2px solid #03FFF7; border-radius: 20px;
+        position: absolute; top: 0; bottom: 0; right: 64px;
+        -moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
+        -o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s;
+        }
+    .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+        margin-left: 0;
+        }
+    .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+        right: 0px;
+        background-color: #27A1CA;
+        }
+    #volver{margin-top: 40px; 
+            color: white;
+            font-weight: bold;
+    }
+    .simple {
+      background: black;
+      cursor:pointer;
+      display:block;
+      font-family: sans-serif;
+      font-size: 1.5em;
+      padding:1em;
+      margin:0 auto;
+      text-align: center;
+        text-shadow: 0px 1px 2px black;
+      box-shadow: 1px 1px 2px gray; 
+      box-sizing: border-box;
+      position: relative;
+      width:200px;
+      text-shadow: 1px 1px 0 cyan, -1px -1px 0 cyan, 1px -1px 0 cyan,
+                -1px 1px 0 cyan, 3px 3px 5px #333;
+
+    }
+    .simple a {
+      color: White;
+      text-decoration:none;
+    }
+    .simple:before, .simple:after {
+      color: White;
+      transition: all 1.2s ease;
+      position:absolute;
+      overflow:hidden;
+      background: cyan ;
+      padding: 1em 0em;
+      top:0;
+
+    }
+    .simple:before {
+      text-align: right;
+      content: 'Re';
+      width:50%;
+      left:0;
+    }
+    .simple:after {
+      text-align: left;
+      content: 'turn';
+      width:50%;
+      right:0;
+    }
+    .simple:hover:before, .simple:hover:after {
+      width:25%;
+      color: black;
+    }

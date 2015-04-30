@@ -1,0 +1,50 @@
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="css.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+
+        <div id="titulo"><h1>Modificar datos</h1></div>
+        <div id="centro">
+            <form name="formulario">
+                <br>
+                Introduzca el DNI de la persona que quiere modificar:
+                <br>
+                <input type="text" onfocus="Clean(this);" id="dnibuscar">
+                <br>
+                <input type="button" onclick="buscarCliente();" value="Buscar">
+                <br>
+                DNI:
+                <br>
+                <input type="text" disabled="disabled" onfocus="Clean(this);" id="dni">
+                <br>
+                Introduzca su nuevo nombre:
+                <br>
+                <input type="text" onfocus="Clean(this);" id="nombre">
+                <br>
+                Introduzca sus nuevos apellidos:
+                <br>
+                <input type="text" onfocus="Clean(this);" id="apellidos">
+                <br>
+                Introduzca su nueva fecha de nacimiento:
+                <br>
+                <input type="date" onfocus="Clean(this);" id="fechaNacimiento">
+                <br>
+                
+                <input type="button" onclick="validar2();" value="Validar">
+                <input type="button" onclick="mostrar();" value="Mostrar">
+                
+                <a href="index.html">
+                    <input type="button" value="Go to Sign In!">
+                </a>
+            </form>
+        </div>
+        <div id="unCliente">
+        </div>
+    </body>
+</html>

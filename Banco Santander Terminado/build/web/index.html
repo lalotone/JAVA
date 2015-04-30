@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Banco Santander</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="estilos.css"/>
+    </head>
+    <body onload="ocultar();">
+        <script type="text/javascript" src="Cliente.js"></script>
+        <script type="text/javascript" src="ServiciosClientes.js"></script>
+        <script>
+            var codCliente = -1;
+            var nom;
+            var apell;
+            var fechaNac;
+               
+            function continuar(){
+                ocultar();
+                var seleccion = document.getElementById('select').value;
+                var eleccion = parseInt(seleccion);
+                switch(eleccion){
+                    case 1:
+                        if(document.getElementById('nombre').value === "" || 
+                            document.getElementById('apellidos').value === "" || 
+                                document.getElementById('fechaNacimiento').value === ""){
+                            alert("Vuelva a intentarlo alguno de los campos esta vacio");
+                        }else{
+                            codCliente += 1;
+                            nom = document.getElementById('nombre').value;
+                            apell = document.getElementById('apellidos').value;
+                            fechaNac = document.getElementById('fechaNacimiento').value;
+                            add(codCliente, nom, apell, fechaNac);
+                        }
+                        break;
+                    case 2:
+                        var codigoEliminar = prompt("Digame el codigo del cliente que desea eliminar");
+                        eliminar(codigoEliminar);
+                        break;
+                    case 3:
+                        var codigoBuscar = prompt("Digame el codigo del cliente que desea mostrar");
+                        buscar(codigoBuscar);
+                        break;
+                    case 4:
+                        if(document.getElementById('nombre').value === "" || 
+                            document.getElementById('apellidos').value === "" || 
+                                document.getElementById('fechaNacimiento').value === ""){
+                            alert("Vuelva a intentarlo alguno de los campos esta vacio");
+                            break;
+                        }else{
+                            nom2 = document.getElementById('nombre').value;
+                            apell2 = document.getElementById('apellidos').value;
+                            fechaNac2 = document.getElementById('fechaNacimiento').value;
+                        }
+                        var codigoModificar = prompt("Digame el codigo del cliente que desea modificar");
+                        modificar(codigoModificar, nom2, apell2, fechaNac2);
+                        break;
+                    case 5:
+                        listar();
+                        break;
+                    default:
+                        alert("ERROR");
+                }
+                document.getElementById('nombre').value = null;
+                document.getElementById('apellidos').value = null;
+                document.getElementById('fechaNacimiento').value = null;
+            }
+            function ocultar(){
+                document.getElementById('cuadroMostrar').style.display='none';
+                document.getElementById('mostrar').value = null;
+            }
+        </script>
+        <div id="cabecera">
+            <h1 id="modh1">GESTIÓN</h1>
+            <img src="imagenes/banco-central-europeo.png"/>
+            <h1 id="modh2">BANCO</h1>
+        </div>
+        <div id="bancoesp"><img src="imagenes/banco_espana_getty_310513_0.jpg"/></div>
+        <div id="gestion">
+            <form>
+                Nombre:<br>
+                <input type="text" id="nombre" size="35" maxlength="50"><br><br>
+                Apellidos:<br>
+                <input type="text" id="apellidos" size="35" maxlength="100"><br><br>
+                Fecha de Nacimiento:<br>
+                <input type="date" id="fechaNacimiento" ><br><br>
+                ¿Qué desea realizar?<br>
+                <select id="select" size="1">
+                    <option value=1>Insertar</option>
+                    <option value=2>Eliminar</option>
+                    <option value=3>Buscar</option>
+                    <option value=4>Modificar</option>
+                    <option value=5>Listar todos</option>
+                </select><br><br>
+                <input type="button" onclick="continuar();" value="Continuar"><br><br>
+                
+            </form>
+        </div>
+        <div id="cuadroMostrar">
+            <textarea type="text" id="mostrar" cols="50" rows="15"></textarea>
+        </div>
+    </body>
+</html>

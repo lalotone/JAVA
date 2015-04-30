@@ -1,0 +1,162 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+          box-sizing: border-box;
+            
+}
+#titulo{font-size: 50px;
+        text-align: center;
+        text-shadow: 1px 1px 0 cyan, -1px -1px 0 cyan, 1px -1px 0 cyan,
+                -1px 1px 0 cyan, 3px 3px 5px #333;
+        font-family: serif;
+        border-bottom: 5px solid white;
+        box-shadow: 10px 10px 5px cyan;
+}
+body {
+  background: black;
+}
+ 
+.pic {
+  border: 10px solid #fff; 
+  height: 300px;
+  width: 300px;
+  margin: 50px;
+  float: left;
+  -webkit-box-shadow: 5px 5px 5px cyan;
+          box-shadow: 5px 5px 5px cyan; 
+      
+}
+
+
+.crecer img {
+  height: 300px;
+  width: 300px;
+ 
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+          
+}
+ 
+.crecer img:hover {
+  width: 350px;
+  height: 350px;
+  
+}
+
+.colores img {
+  height: 500px;
+  width: 500px;
+ 
+  -webkit-transition: all 4s ease;
+     -moz-transition: all 4s ease;
+       -o-transition: all 4s ease;
+      -ms-transition: all 4s ease;
+          transition: all 4s ease;
+}
+ 
+.colores img:hover {
+  width: 300px;
+  height: 300px;
+  -webkit-filter: hue-rotate(333deg);
+}
+
+.deslizar img {
+  margin-left: 0px;
+  -webkit-transition: margin 1s ease;
+     -moz-transition: margin 1s ease;
+       -o-transition: margin 1s ease;
+      -ms-transition: margin 1s ease;
+          transition: margin 1s ease;
+}
+ 
+.deslizar img:hover {
+  margin-left: -100px;
+}
+
+ .accionador img{
+  margin-top: 0px;
+   -webkit-transition: 5s ease-in-out;
+    -moz-transition: 5s ease-in-out;
+    -o-transition: 5s ease-in-out;
+    transition: 5s ease-in-out;
+  }
+ .accionador:hover + .ruleta {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    margin-left: 350px;
+    opacity: 0;
+  }
+
+
+.ruleta {
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+
+}
+ 
+         
+.ojo {
+  -webkit-transition: all 0.2s ease;
+     -moz-transition: all 0.2s ease;
+       -o-transition: all 0.2s ease;
+      -ms-transition: all 0.2s ease;
+          transition: all 0.2s ease;
+}
+ 
+.ojo:hover {
+  border-radius: 80%;
+  -webkit-transform: rotate(360deg);
+     -moz-transform: rotate(360deg);
+       -o-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+          -webkit-transform: translate(-10%, -10%);
+}
+
+.foco {
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ 
+.foco:hover {
+  border: 15px dashed white;
+  border-radius: 100%;
+}
+
+.vuelta img {
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+
+}
+ 
+.vuelta img:hover {
+	-webkit-transform:perspective(900px) rotateX(180deg);
+}
+
+.negativo {
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ 
+.negativo:hover {
+  -webkit-filter: invert(100%);
+}

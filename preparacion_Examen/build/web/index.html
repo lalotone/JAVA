@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <script language="JavaScript">
+            var array = new Array();
+            
+            function Clean(control){
+                control.value="";
+            }
+            function Validar(){
+                var nombre = document.forms["formulario"]["nombre"].value;
+                var apellidos = document.forms["formulario"]["apellidos"].value;
+                var contrasenya = document.forms["formulario"]["password"].value;
+                
+                var unCliente = new Cliente(nombre, apellidos, contrasenya); 
+                array.push(unCliente);
+            }
+            function Cliente(nombre,apellidos,contrasenya){
+                this.nombre = nombre;
+                this.apellidos = apellidos;
+                this.contrasenya = contrasenya;
+            }
+            function Mostrar(){
+                var mostrarLista = document.getElementById('unCliente');
+                mostrarLista.innerHTML= "";
+                for (var i = 0; i < array.length; i++){
+                    mostrarLista.innerHTML += "<br>" + array.nombre[i] +" "+ array.apellidos[i] +" "+  array.contrasenya[i] + "<br>";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form name="formulario">
+        <br>
+        <input type="text" value="Introduzca su nombre" onclick="Clean(this)" name="nombre">
+        <br>
+        <input type="text" value="Introduzca su apellido" onclick="Clean(this)" name="apellidos">
+        <br>
+        <input type="password" value="password" onclick="Clean(this)" name="contrasenya">
+        <input type="button" onclick="Validar();" value="Validar">
+        <input type="button" onclick="Mostrar();" value="Mostrar lista">
+        </form>
+        <div id="unCliente">
+        </div>
+    </body>
+</html>

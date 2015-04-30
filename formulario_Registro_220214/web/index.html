@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Formulario de registro</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="css.css">
+        
+        <script language="JavaScript">
+var array = new Array();
+
+function Clean(control){
+	control.value = '';
+}
+
+function Validate(){
+
+	var nombre =  document.forms["formulario"]["nombre"].value;
+	var apellidos =  document.forms["formulario"]["apellidos"].value;
+	var fechaNacimiento =  document.forms["formulario"]["fechaNac"].value;
+
+	if (nombre === '' || nombre===null){
+		alert('Faltan datos');
+		return false;
+	}
+	if (apellidos === '' || apellidos===null){
+		alert('Faltan datos');
+		return false;
+	}
+
+	var unCliente = new Cliente (nombre,apellidos,fechaNacimiento);
+
+	array.push(unCliente);
+}
+
+function Cliente(nombre,apellidos,fechaNac){
+	this.nombre = nombre;
+	this.apellidos = apellidos;
+	this.fechaNacimiento = fechaNac;
+}
+function ListaCompleta() {
+    var mostrarLista = document.getElementById('unCliente');
+    mostrarLista.innerHTML = "";
+    for (var i = 0; i < array.length; i++) {
+        mostrarLista.innerHTML +="<br>" + "Cliente " + (i+1) + ": "+ " " + array[i].nombre + ", " + array[i].apellidos + ", " + array[i].fechaNacimiento+ "<br>";
+    }
+
+}
+
+</script>
+        
+    </head>
+    <body>
+        <h1>Sign In!</h1>
+        <form name="formulario">
+
+            Introduzca su nombre:
+            <input type="text" value="introduzca su nombre" onfocus="Clean(this);" name="nombre">
+            <br>
+            Introduzca sus apellidos:
+            <input type="text" value="Introduzca sus apellidos" onfocus="Clean(this);" name="apellidos">
+            <br>
+            Introduzca su fecha de nacimiento:
+            <input type="date" onfocus="Clean(this);" name="fechaNac">
+            <br>
+            <input type="button" onclick="Validate();" value="Validar">
+            <input type="button" onclick="ListaCompleta();" value="Mostrar">
+        </form>
+       
+	<div id="unCliente">
+        </div>
+    </body>
+</html>

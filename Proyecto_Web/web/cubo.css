@@ -1,0 +1,97 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22-nov-2013, 8:16:39
+    Author     : lalotone
+*/
+
+body{ background: -webkit-radial-gradient(black, white);
+   background: url("http://www.wallsave.com/wallpapers/1440x900/unix/722094/unix-thank-you-for-ing-background-722094.jpg") no-repeat;
+   height: 400px;
+   width: 600px;
+   margin-left: 400px;
+   margin-bottom: 300px;
+   margin-right: 100px;
+   margin-top: 100px;
+   color: orange;
+   font-family: serif;
+}
+
+.cubo, .cubo .cara {
+    width: 400px;
+    height: 400px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 200px;
+}
+.cubo .cara {
+    position: absolute;
+}
+.cubo {
+    margin: 200px auto;
+}
+.cubo .cara#superior {
+    background:url("http://ubuntuarte.com/wordpress/wp-content/uploads/2009/04/debian-kfreebsd.png");
+}
+.cubo .cara#frente {
+    background:url("http://4.bp.blogspot.com/_i1HB1Sfl0_0/TOcT-LSgk5I/AAAAAAAAAHE/wZUfBVYBtCY/s1600/Fedora.gif");
+}
+.cubo .cara#atras {
+    background:url("http://www.hugobarros.com.br/wp-content/uploads/20101109210020Ubuntu-Logo-apple-style.png");
+}
+.cubo .cara#derecha {
+    background:url("http://samkerr.files.wordpress.com/2009/08/archlinuxlogo-400x400-400x4002.jpg");
+}
+.cubo .cara#izquierda {
+    background:url("http://linuxzone.es/wp-content/uploads/2011/08/tux_reflejo1.png");
+}
+.cubo .cara#inferior {
+    background:url("http://recursostic.educacion.es/observatorio/web/images/upload/1observatorio/iconos_art/pinguino_linux1.jpg");
+}
+.cubo {
+    transform-style: preserve-3d;
+}
+.cubo {
+    transform-style: preserve-3d;
+    transform: perspective(700px) rotateX(-30deg) rotateY(-30deg);
+}
+.cubo .cara#derecha {
+    transform: rotateY(90deg);
+}
+.cubo .cara#derecha {
+    transform: rotateY(90deg) translateZ(200px);;
+}
+.cubo .cara#superior {
+    background:url("http://ubuntuarte.com/wordpress/wp-content/uploads/2009/04/debian-kfreebsd.png");
+    transform: rotateX(90deg) translateZ(200px);
+}
+.cubo .cara#frente {
+    background:url("http://4.bp.blogspot.com/_i1HB1Sfl0_0/TOcT-LSgk5I/AAAAAAAAAHE/wZUfBVYBtCY/s1600/Fedora.gif");
+    transform: translateZ(200px);
+}
+.cubo .cara#atras {
+    background:url("http://www.hugobarros.com.br/wp-content/uploads/20101109210020Ubuntu-Logo-apple-style.png");
+    transform: translateZ(-200px);
+}
+.cubo .cara#derecha {
+    background:url("http://samkerr.files.wordpress.com/2009/08/archlinuxlogo-400x400-400x4002.jpg");
+    transform: rotateY(90deg) translateZ(200px);
+}
+.cubo .cara#izquierda {
+    background:url("http://www.informatique-depan.fr/images/logo/systemes-exploitation/linux/distribution-open-suse/opensuse.png");
+    transform: rotateY(-90deg) translateZ(200px);
+}
+.cubo .cara#inferior {
+    background:url("http://linuxzone.es/wp-content/uploads/2011/08/tux_reflejo1.png");
+    transform: rotateX(-90deg) translateZ(200px);
+}
+.cubo {
+  animation: rotate 5s infinite linear;
+}
+@keyframes rotate {
+    0% { transform: rotateX(   0deg ) rotateY(   0deg ); }
+  100% { transform: rotateX( 360deg ) rotateY( 360deg ); }
+}
